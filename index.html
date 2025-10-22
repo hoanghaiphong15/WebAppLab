@@ -1,124 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Truong Huy Hoang – Junior Frontend Developer</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Professional CV of Your Name – Junior Frontend Developer specializing in HTML, CSS, JavaScript, and responsive web design.">
-  <meta name="keywords" content="Frontend Developer, Web Developer, HTML, CSS, JavaScript, Resume, CV">
-  <link rel="canonical" href="https://example.com/yourname-cv">
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Your Name – Junior Frontend Developer">
-  <meta property="og:description" content="Explore the CV of Your Name – skilled in frontend development, UI design, and responsive web design.">
-  <meta property="og:type" content="profile">
-  <meta property="og:url" content="https://example.com/yourname-cv">
-  <meta property="og:image" content="https://example.com/og-image.jpg">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.5;
-      background-color: #f9fafb;
-    }
-
-    hr {
-      border: 1px solid #000;
-    }
-
-    h1 {
-      margin-bottom: 5px;
-    }
-
-    h5, h4 {
-      margin: 5px 0;
-    }
-
-    section {
-      margin-top: 30px;
-    }
-
-    .section-title {
-      color: green;
-    }
-
-    .job ul {
-      margin: 5px 0 5px 20px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="VietTravel — your guide to Vietnam: curated itineraries, travel tips, and photo stories across the country." />
+  <title>VietTravel — Home</title>
+  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <hr>
-    <h1>Truong Huy Hoang</h1>
-    <h5 style="color: green;">Junior Frontend Developer</h5>
+  <a class="sr-only" href="#main">Skip to main content</a>
 
-    <address>
-      <h5>
-        123 Your Street<br>
-        Your City, ST 12345<br>
-        (123) 456-7890<br>
-        <a href="mailto:no_reply@example.com">no_reply@example.com</a>
-      </h5>
-    </address>
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <div class="logo" aria-hidden="false">
+        <a href="index.html" aria-label="VietTravel home">
+          <img src="assets/icons/logo.svg" alt="VietTravel logo" style="height:40px; vertical-align:middle">
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="map.html">Map</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="skills">
-      <h2 class="section-title">Skills</h2>
-      <p>HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design, Technical Writing, Presentation</p>
+  <main id="main" class="container" role="main">
+    <section aria-labelledby="hero-heading" class="hero" style="margin:1rem 0;">
+      <img src="assets/img/index-1.jpg" alt="Sunset over a tropical beach" style="width:100%; height:auto; border-radius:14px; display:block" loading="lazy">
+  <h1 id="hero-heading" style="margin-top:.75rem">VietTravel — Vietnam itineraries & travel guide</h1>
+  <p style="color:var(--muted); max-width:70ch;">Practical Vietnam travel guides, curated itineraries, and photo stories to help you discover the country — from Hanoi's Old Quarter to the Mekong Delta.</p>
+  <p><a href="destinations.html" class="cta" style="display:inline-block; margin-top:.5rem; padding:.6rem .9rem; background:var(--accent); color:#fff; border-radius:10px; text-decoration:none;">Explore Vietnam</a></p>
     </section>
 
-    <section id="education">
-      <h2 class="section-title">Education</h2>
-      <article>
-        <h4 style="color: blue;">School Name, Location – Degree</h4>
-        <p><strong>Month 20xx to Month 20xx</strong></p>
-        <p>List of exciting things you did at university</p>
-      </article>
+    <section aria-labelledby="featured" class="grid" style="align-items:start;">
+      <div>
+        <h2 id="featured">Featured Itineraries</h2>
+
+        <article class="card" style="padding:1rem; background:var(--card); border-radius:12px; margin-bottom:1rem;">
+          <h3>7-Day Northern Vietnam</h3>
+          <p class="muted">Hanoi → Sapa → Ha Long Bay — culture, trekking, and karst scenery.</p>
+          <p><a href="destinations.html#north" aria-label="Read Northern Vietnam itinerary">Read itinerary →</a></p>
+        </article>
+
+        <article class="card" style="padding:1rem; background:var(--card); border-radius:12px; margin-bottom:1rem;">
+          <h3>Central Vietnam Discovery</h3>
+          <p class="muted">Da Nang → Hoi An → Hue — beaches, heritage towns, and local food.</p>
+          <p><a href="destinations.html#central" aria-label="Read Central Vietnam itinerary">Read itinerary →</a></p>
+        </article>
+
+        <article class="card" style="padding:1rem; background:var(--card); border-radius:12px;">
+          <h3>Southern Vietnam Highlights</h3>
+          <p class="muted">Ho Chi Minh City → Mekong Delta — city life, floating markets, and river villages.</p>
+          <p><a href="destinations.html#south" aria-label="Read Southern Vietnam itinerary">Read itinerary →</a></p>
+        </article>
+      </div>
+
+      <aside role="complementary" aria-labelledby="sidebar-heading" class="sidebar" style="padding:1rem;">
+        <h2 id="sidebar-heading">Quick Links</h2>
+        <nav aria-label="Quick links" class="quick-links">
+          <ul role="list">
+            <li role="listitem"><a href="gallery.html" title="View photo gallery">Photo Gallery</a></li>
+            <li role="listitem"><a href="map.html" title="Open interactive map">Interactive Map</a></li>
+            <li role="listitem"><a href="contact.html" title="Request a travel quote">Request a Quote</a></li>
+          </ul>
+        </nav>
+
+        <section aria-labelledby="newsletter" style="margin-top:1rem; padding:.8rem; background:var(--card); border-radius:10px;">
+          <h3 id="newsletter">Newsletter</h3>
+          <p style="margin:.25rem 0 .6rem 0; color:var(--muted)">Get new itineraries & travel tips.</p>
+          <form id="travelForm" action="#" method="post">
+            <div id="formMessages" aria-live="polite" style="margin-bottom:.4rem"></div>
+            <label for="nl-email" class="sr-only">Email address</label>
+            <input id="nl-email" type="email" name="email" placeholder="your@email.com" required>
+            <div style="margin-top:.5rem"><button type="submit">Subscribe</button></div>
+          </form>
+        </section>
+      </aside>
     </section>
 
-    <section id="experience">
-      <h2 class="section-title">Experience</h2>
-
-      <article class="job">
-        <h4 style="color: blue;">Company Name, Location – Job Title</h4>
-        <p><strong>Month 20xx to Month 20xx</strong></p>
-        <ul>
-          <li>List of achievements</li>
-          <li>List of achievements</li>
-          <li>List of achievements</li>
-        </ul>
-        <p>Skills: List of skills used or gained at this company</p>
-      </article>
-
-      <article class="job">
-        <h4 style="color: blue;">Company Name, Location – Job Title</h4>
-        <p><strong>Month 20xx to Month 20xx</strong></p>
-        <ul>
-          <li>List of achievements</li>
-          <li>List of achievements</li>
-          <li>List of achievements</li>
-        </ul>
-        <p>Skills: List of skills used or gained at this company</p>
-      </article>
-    </section>
-
-    <section id="internet">
-      <h2 class="section-title">Across the Internet</h2>
-      <p>Add your LinkedIn, GitHub profile links</p>
+    <section aria-labelledby="about-preview" style="margin-top:1.25rem;">
+      <h2 id="about-preview">About the author</h2>
+      <p class="muted">Hi — I’m a traveler and writer sharing practical itineraries, honest reviews and tips so you can travel smarter. <a href="about.html">Learn more →</a></p>
     </section>
   </main>
 
-  <footer>
-    <hr>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  <footer role="contentinfo" style="margin-top:2rem; padding:1.25rem; background:linear-gradient(90deg, rgba(11,114,239,0.02), transparent);">
+    <div class="container" style="display:flex; justify-content:space-between; gap:1rem; align-items:center; flex-wrap:wrap;">
+      <div>
+  <small>© <span id="year"></span> VietTravel — Built by Hoàng Hẹ Hẹ</small>
+      </div>
+      <nav aria-label="Footer" style="display:flex; gap:.5rem;">
+        <a href="policy.html">Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
 </body>
 </html>
