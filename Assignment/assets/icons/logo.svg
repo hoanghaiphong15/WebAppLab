@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" width="200" height="48" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">VietTravel</title>
+  <!-- Pin mark -->
+  <g transform="translate(14,6)">
+    <path d="M18 0C11.163 0 5.5 5.663 5.5 12.5c0 7.5 11.5 22.6 11.5 22.6s11.5-15.1 11.5-22.6C30.5 5.663 24.837 0 18 0z" fill="#0b72ef"/>
+    <circle cx="18" cy="12.5" r="4.2" fill="#fff"/>
+    <circle cx="18" cy="12.5" r="2.2" fill="#ff6b3d"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="60" y="30" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial" font-size="20" font-weight="700" fill="#0b1726">Viet</text>
+  <text x="115" y="30" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial" font-size="20" font-weight="600" fill="#0b72ef">Travel</text>
+</svg>

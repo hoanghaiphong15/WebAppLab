@@ -1,0 +1,53 @@
+
+AI Usage Log — CSS & JS summary
+
+Date: Oct 21, 2025
+
+This file contains the summary of HTML, CSS and JavaScript changes made to the VietTravel site during the editing session.
+
+CSS changes
+- File: `assets/css/style.css`
+	- Added responsive gallery grid styles (.gallery-grid) and figure rules to improve layout on mobile and desktop.
+	- Added lightbox overlay styles for the UI lightbox (classes: .lb-overlay, .lb-inner, .lb-caption).
+	- Increased header logo size across pages with a high-specificity rule:
+		`.site-header .logo img { height: 56px !important; }` (with a smaller fallback at narrow widths).
+	- Ensured images use `max-width:100%` and `height:auto` for responsive behavior.
+
+Key snippets (illustrative)
+```
+.gallery-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:16px; }
+.lb-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; }
+.site-header .logo img { height:56px !important; }
+```
+
+JavaScript changes
+- File: `assets/js/main.js`
+	- Hardened DOM access to avoid runtime errors on pages that don't contain the newsletter/contact forms. Example guard used:
+		`const form = document.querySelector('#contact-form'); if (form) { form.addEventListener(...); }`
+
+- File: `assets/js/ui.js`
+	- Created a lightweight UI helper that provides:
+		- Mobile nav toggle (toggle `.open` class on header/nav elements).
+		- Image lightbox / click-to-zoom behavior for images inside `.gallery-grid` and `.img-figure`.
+		- Keyboard support for closing the lightbox (Esc) and a close button inside the overlay.
+
+Key snippets (illustrative)
+```
+// safe guard in main.js
+const form = document.querySelector('#newsletter');
+if (form) { form.addEventListener('submit', e => { e.preventDefault(); /* ... */ }); }
+
+// openLightbox in ui.js
+function openLightbox(img) {
+	const overlay = document.createElement('div'); overlay.className='lb-overlay';
+	// inner img, caption and close handlers
+	document.body.appendChild(overlay);
+}
+```
+
+Files touched (CSS/JS only)
+- `assets/css/style.css` — updated
+- `assets/js/main.js` — hardened guards
+- `assets/js/ui.js` — added/extended (nav toggle + lightbox)
+In HTML, 25% AI was used to code faster and more accuracy.
+In CSS/JS, 80% AI was used to code.
