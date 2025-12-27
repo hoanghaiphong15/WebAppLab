@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="About VietTravel — mission, author and credits." />
+  <title>About — VietTravel</title>
+  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <div class="logo">
+        <a href="index.html" aria-label="VietTravel home">
+          <img src="assets/icons/logo.svg" alt="VietTravel logo" style="height:40px;">
+        </a>
+      </div>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="map.html">Map</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <article>
+  <h1>About VietTravel</h1>
+  <p class="muted">VietTravel is an English-language travel guide focused entirely on Vietnam. We publish practical itineraries, honest local tips, and photo stories to help you explore cities, coastlines and countryside responsibly.</p>
+
+      <section aria-labelledby="mission">
+        <h2 id="mission">Mission</h2>
+          <p>To help visitors discover Vietnam's diversity — from street food and markets to mountains and rivers — with clear, tested itineraries and responsible travel advice.</p>
+      </section>
+
+      
+
+      <section aria-labelledby="credits" style="margin-top:1rem;">
+        <h2 id="credits">Credits</h2>
+        <p>Images and icons are credited in the policy page. This site was built as a student project using semantic HTML, external CSS, and accessible patterns.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer role="contentinfo" style="margin-top:2rem; padding:1.25rem;">
+    <div class="container" style="display:flex; justify-content:space-between; gap:1rem; align-items:center; flex-wrap:wrap;">
+  <small>© <span id="year"></span> VietTravel</small>
+      <nav aria-label="Footer" style="display:flex; gap:.5rem;">
+        <a href="policy.html">Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

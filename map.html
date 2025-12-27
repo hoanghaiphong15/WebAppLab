@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Interactive map and video iframe page." />
+  <title>Map & Video — VietTravel</title>
+  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+  <a href="index.html"><img src="assets/icons/logo.svg" alt="VietTravel logo" style="height:40px;"></a>
+      </div>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="map.html" aria-current="page">Map</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+  <h1>Interactive Map</h1>
+  <p class="muted">Explore highlighted destinations across Vietnam. Use the map to jump to cities and the video for a quick country overview.</p>
+
+    <section aria-labelledby="map-frame" style="margin-top:1rem;">
+  <h2 id="map-frame">Map (Google Maps iframe)</h2>
+
+  <!-- Example Google Maps embed — centered on Ho Chi Minh City (replace params if needed) -->
+      <div style="aspect-ratio:16/9; width:100%; border-radius:12px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+        <iframe
+          title="Map showing sample route"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31353.123456789!2d106.660172!3d10.762622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f2727abcd12%3A0xabcdef1234567890!2sHo%20Chi%20Minh%20City!5e0!3m2!1sen!2s!4v1690000000000"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section aria-labelledby="video" style="margin-top:1rem;">
+      <h2 id="video">Video overview (YouTube iframe)</h2>
+      <div style="aspect-ratio:16/9; width:100%; border-radius:12px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+        <!-- Embedded YouTube (use the /embed/ URL form) -->
+        <iframe title="VietTravel overview video" width="560" height="315" src="https://www.youtube.com/embed/Au6LqK1UH8g?list=RDAu6LqK1UH8g" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="VietTravel overview video"></iframe>
+      </div>
+      <div style="margin-top:.6rem; display:flex; gap:.75rem; align-items:center;">
+        <img src="https://img.youtube.com/vi/Au6LqK1UH8g/hqdefault.jpg" alt="Video thumbnail" style="width:140px; height:80px; object-fit:cover; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.08);" loading="lazy">
+        <div>
+          <p style="margin:0;">If the video does not play here, you can open it on YouTube:</p>
+          <p style="margin:.25rem 0 0;"><a href="https://youtu.be/Au6LqK1UH8g?list=RDAu6LqK1UH8g" target="_blank" rel="noopener noreferrer">Watch on YouTube — VietTravel overview</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" style="margin-top:2rem; padding:1.25rem;">
+    <div class="container" style="display:flex; justify-content:space-between; gap:1rem; align-items:center; flex-wrap:wrap;">
+  <small>© <span id="year"></span> VietTravel</small>
+      <nav aria-label="Footer" style="display:flex; gap:.5rem;">
+        <a href="policy.html">Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
