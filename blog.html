@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Blog | VietTravel</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/icons/favicon.svg" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <div class="logo">
+        <a href="index.html" aria-label="VietTravel home"><img src="assets/icons/logo.svg" alt="VietTravel logo" style="height:40px;"></a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      </div>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <a href="map.html">Map</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="blog-list">
+    <h2>Travel Stories & Tips</h2>
+    <article>
+      <figure>
+        <img src="assets/img/HanoiOldQuarter.jpg" alt="Hanoi Old Quarter street scene" loading="lazy" onerror="this.src='assets/img/hero-1.svg'" />
+        <figcaption>Old Quarter, Hanoi</figcaption>
+      </figure>
+      <h3><a href="post-1.html">Hanoi: Street Food & Old Quarter Highlights</a></h3>
+      <p>Explore the must-try dishes, the best walking routes in the Old Quarter, and tips for first-time visitors...</p>
+      <a href="post-1.html" class="read-more">Read More</a>
+    </article>
+
+    <article>
+      <figure>
+        <img src="assets/img/index-1.jpg" alt="Ha Long Bay cruise boat" loading="lazy" onerror="this.src='assets/img/hero-1.svg'" />
+        <figcaption>Ha Long Bay cruise (illustrative)</figcaption>
+      </figure>
+      <h3><a href="post-2.html">Ha Long Bay Cruising: What to Know</a></h3>
+      <p>Choosing between day trips and overnight cruises, top sights, and responsible travel tips for the bay...</p>
+      <a href="post-2.html" class="read-more">Read More</a>
+    </article>
+  </main>
+
+  <footer role="contentinfo" style="margin-top:2rem; padding:1.25rem;">
+    <div class="container" style="display:flex; justify-content:space-between; gap:1rem; align-items:center; flex-wrap:wrap;">
+      <small>© <span id="year"></span> VietTravel</small>
+      <nav aria-label="Footer" style="display:flex; gap:.5rem;"><a href="policy.html">Policy</a><a href="contact.html">Contact</a></nav>
+    </div>
+  <footer>
+    <p>© <span id="year"></span> VietTravel. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/ui.js" defer></script>
+</html>
